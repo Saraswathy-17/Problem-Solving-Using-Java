@@ -1,0 +1,27 @@
+//Scanner used to read the user input
+import java.util.Scanner;  
+
+//Array class is defined as public to access anywhere from the code
+public class Array{    
+
+//main function is called using String[] args
+	public static void main(String[] args) { 
+
+//System.in here in Scanner used to get the nextInt() method for user input
+		Scanner sc=new Scanner(System.in); 
+		System.out.println("Enter the number of elements:");
+
+//n is the variable to store the next value in the array
+		int n=sc.nextInt(); 
+
+// new is used for memory allocation and arr[] is storing the n in int[n]
+		int[] arr=new int[n]; 
+		System.out.println("Enter the elements of array:");
+		for(int i=0;i<n;i++) {
+			arr[i]=sc.nextInt(); //loop the number of array and iterate the next element
+		}
+		System.out.println("Enter the index of array:");
+		int index=sc.nextInt(); //return the index of the array
+		System.out.println("Element at index "+index+" is : "+arr[index]);
+	}
+}
